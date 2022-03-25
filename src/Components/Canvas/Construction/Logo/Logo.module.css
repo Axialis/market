@@ -1,0 +1,32 @@
+.image{
+    width: 220px;
+}
+.imageblock{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.divblock{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 350px;
+    height: 250px;
+}
+.button
+{
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: #eaece5;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media print{
+    .button
+    {
+        visibility: hidden;
+    }
+}

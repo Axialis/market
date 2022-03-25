@@ -1,0 +1,36 @@
+.cell
+{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.colorBlock
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 350px;
+    height: 120px;
+}
+
+.colorButtons
+{
+    display: flex;
+    gap: 10px;
+}
+.text
+{
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+

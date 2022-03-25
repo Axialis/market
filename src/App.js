@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./Components/Navigation/Navigation";
+import Construction from "./Components/Canvas/Construction/Construction";
+import Information from "./Components/Information/Information";
+import Historical from "./Components/Canvas/Historical/Historical";
+import Mainpage from "./Components/Canvas/Mainpage/Mainpage";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import s from "./App.module.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+function App(props) {
+    return (
+        <div className={s.marketbody}>
+            <BrowserRouter>
+                <Navigation/>
+                <Routes>
+                    <Route path='/constructor' element={<Construction
+                        Cup={props.AppState.color.cup}
+                        Lid={props.AppState.color.lid}
+                        ColorOfCups={props.AppState.colorsCups}
+                        dispatch={props.dispatch}
+                        Update={props.Update}/>}/>
+                     <Route path='/historical' element={<Historical/>}/>
+                     <Route path='/' element={<Mainpage/>}/>
+                     
+                </Routes>
+                <Information/>
+            </BrowserRouter>
+        </div>
+
+    );
 }
 
 export default App;

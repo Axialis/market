@@ -1,0 +1,17 @@
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010101;
+    height: 40px;
+    width: 100%;
+}
+
+.text
+{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}

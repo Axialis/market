@@ -1,0 +1,25 @@
+.container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: justify;
+    gap: 80px;
+}
+
+span, ul, li{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h1, h2{
+    padding: 0px;
+    margin: 15px;
+}
+
+.photo
+{
+    width: 300px;
+}
