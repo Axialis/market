@@ -154,11 +154,9 @@ let generatePlot = (refPoint, data, sizeX, sizeY, nowTime) => {
 
 let Weather = () => {
     const APIkey = 'fa0d06ddaa22e7cadbe342479a06dbbe'
-    const [weather, setWeather] = useState({});
     const [status, setStatus] = useState('Load');
-    const [outdoor, setOutdoor] = useState([]);
-
     const myref = useRef();
+    let outdoor = [];
 
     function getLocation() {
         if (navigator.geolocation) {
@@ -168,7 +166,7 @@ let Weather = () => {
         }
     }
 
-    function successHandler(position) {        
+    function successHandler(position) {
         getWeatherHistory(position.coords.latitude, position.coords.longitude, position.timestamp);
     }
 
@@ -204,25 +202,26 @@ let Weather = () => {
 
     async function gatDataFromServer(url) {
         const response = await fetch(url)
-        dataFormatter(await response.json())        
+        dataFormatter(await response.json())
     }
-    
+
     function dataFormatter(data) {
+        let weather = {};
         for (let k = 0; k < data.hourly.length; k++) {
-            setWeather(weather[`temp${k}`] = Math.round(data.hourly[k].temp - 273.15));
-            setWeather(weather[`dt${k}`] = data.hourly[k].dt);
+            weather[`temp${k}`] = Math.round(data.hourly[k].temp - 273.15);
+            weather[`dt${k}`] = data.hourly[k].dt;
             const hours = new Date(data.hourly[k].dt * 1000).getHours();
             if (hours % 3 === 0) {
-                setOutdoor(outdoor.push(joinData(weather[`temp${k}`], `${data.hourly[k].dt}`)));
+                outdoor.push(joinData(weather[`temp${k}`], `${data.hourly[k].dt}`));
             }
         }
-    } 
+    }
 
-    function joinData (temperature, time) {return {temperature, time}}
+    function joinData(temperature, time) { return { temperature, time } }
 
     useEffect(() => {
         getLocation();
-    }, [])   
+    }, [])
 
     if (status === 'Load') {
         return (

@@ -13,9 +13,9 @@ let Mainpage = () => {
                 high-frequency surgical equipment.
                 My strong skill is low level programming as C, Verilog.
                 In my project I use C++ to work with graphic.
-                I'm currently learning JavaScript and React.</span>
+                I'm currently learning JavaScript and React. </span>
 
-            <span>In this single-page application, you can configure a cup with a lid
+            <span>In this simple single-page application, you can choose a cup with a lid
                 from the available colors, save as a pdf,
                 and see the weather history for the past 5 days.</span>
 
