@@ -3,7 +3,7 @@ import Construction from "./Components/Canvas/Construction/Construction";
 import Information from "./Components/Information/Information";
 import Historical from "./Components/Canvas/Historical/Historical";
 import Mainpage from "./Components/Canvas/Mainpage/Mainpage";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 import s from "./App.module.css"
 
 
@@ -12,7 +12,7 @@ import s from "./App.module.css"
 function App(props) {
     return (
         <div className={s.marketbody}>
-            <BrowserRouter>
+            <HashRouter>
                 <Navigation/>
                 <Routes>
                     <Route path='/constructor' element={<Construction
@@ -26,7 +26,7 @@ function App(props) {
                      
                 </Routes>
                 <Information/>
-            </BrowserRouter>
+            </HashRouter>
         </div>
 
     );
