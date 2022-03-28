@@ -22,7 +22,7 @@ function App(props) {
                         dispatch={props.dispatch}
                         Update={props.Update}/>}/>
                      <Route path='/historical' element={<Historical/>}/>
-                     <Route path='/market' element={<Mainpage/>}/>
+                     <Route path='/' element={<Mainpage/>}/>
                      
                 </Routes>
                 <Information/>
