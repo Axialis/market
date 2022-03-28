@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/market/static/css/main.c5fbac81.css",
+    "main.js": "/market/static/js/main.5bcc6518.js",
+    "static/js/787.5321f4d1.chunk.js": "/market/static/js/787.5321f4d1.chunk.js",
+    "static/media/photo.jpeg": "/market/static/media/photo.dfa4e8df40a6625c4581.jpeg",
+    "static/media/3.svg": "/market/static/media/3.c4fde91cb7b7f1359584d55bfd23d933.svg",
+    "static/media/10.svg": "/market/static/media/10.1d8ec83cd6522d86c4ab936e8087c1ac.svg",
+    "static/media/12.svg": "/market/static/media/12.6d0090f70edd8f0d50693275a103f0cf.svg",
+    "static/media/error.svg": "/market/static/media/error.0d960a2e50dec0a9d529c194bd967e31.svg",
+    "static/media/11.svg": "/market/static/media/11.61173de8c7cee6ad085cfefb1afe1986.svg",
+    "static/media/7.svg": "/market/static/media/7.fb766fe74e677d53fa8c9ec6fd9f28d2.svg",
+    "static/media/2.svg": "/market/static/media/2.aeceb61ebda6a54b8395bc0cf1c3cd34.svg",
+    "static/media/5.svg": "/market/static/media/5.f1b78f0341aa2d934798c96eac5747e9.svg",
+    "static/media/4.svg": "/market/static/media/4.de01e119158b0ccc983472d3670fdc0c.svg",
+    "static/media/8.svg": "/market/static/media/8.ac795ef95eda720ab0b118bbf120bd81.svg",
+    "static/media/13.svg": "/market/static/media/13.96310b05172510da3d27bdb1678439e2.svg",
+    "static/media/15.svg": "/market/static/media/15.0833c96c0ad967e110530425d7912c5f.svg",
+    "static/media/9.svg": "/market/static/media/9.b0324721dd331a8a50c373345e5de429.svg",
+    "static/media/14.svg": "/market/static/media/14.a44fe8c2cb1bd61beb48c69c37b9c3c1.svg",
+    "static/media/1.svg": "/market/static/media/1.b2467ad22b515e901124cd9f792b933b.svg",
+    "static/media/6.svg": "/market/static/media/6.356a7c33470e8c9488a82eb2b082d63f.svg",
+    "static/media/sun.svg": "/market/static/media/sun.cba13cbc2897243ddaa2df86b154faaa.svg",
+    "index.html": "/market/index.html",
+    "main.c5fbac81.css.map": "/market/static/css/main.c5fbac81.css.map",
+    "main.5bcc6518.js.map": "/market/static/js/main.5bcc6518.js.map",
+    "787.5321f4d1.chunk.js.map": "/market/static/js/787.5321f4d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5fbac81.css",
+    "static/js/main.5bcc6518.js"
+  ]
+}
