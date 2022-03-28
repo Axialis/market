@@ -6,7 +6,7 @@ let Navigation = () => {
     return (
         <nav className={style.nav}>
             <ul className={style.list}>
-                <NavLink  to = "/" className={style.item}>Main Page</NavLink>
+                <NavLink  to = "/market" className={style.item}>Main Page</NavLink>
                 <NavLink  to = "/constructor" className={style.item}>Cup Constructor</NavLink>
                 <NavLink  to = "/historical" className={style.item}>Historical weather</NavLink>
             </ul>
