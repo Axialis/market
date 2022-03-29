@@ -23,8 +23,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 90ch;
-
 }
 
 .cup {
@@ -166,7 +164,7 @@ width: 300px;
 }
 
 div{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     
 }
 

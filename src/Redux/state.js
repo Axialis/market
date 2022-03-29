@@ -52,10 +52,7 @@ let store = {
                 this._state.color.lid = action.color;
             }
         } else if (action.type === LOAD_LOGO) {
-            for (let x = 1; x < 16; x++) {
-                let logo = new Image();
-                logo.src = `./assets/pic/${x}.svg`
-            }
+            cacheImage(this._state.logobase);
         } else if (action.type === MAKE_OBJECT) {
             for (let k = 0; k < 15; k++) {
                 this._state.image[`img${k}`] = this._state.logobase[k];
@@ -68,6 +65,21 @@ let store = {
             return this._state.logobase.length
         }
     }
+}
+
+const cacheImage = async (srcArray) =>
+{
+    const promises = await srcArray.map((src) => 
+    {
+        return new Promise((resolve, reject) =>
+        {
+            const img = new Image();
+            img.src = src;
+            img.onload = resolve();
+            img.onerror = reject();
+        })
+    })
+    await Promise.all(promises);
 }
 
 export const buttonHandler = (color, id) => {

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #010101;
+    background-color: #323330;
     height: 40px;
     width: 100%;
 }
@@ -12,6 +12,6 @@
 {
     color: #ffffff;
     font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
