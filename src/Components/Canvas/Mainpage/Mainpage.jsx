@@ -6,7 +6,7 @@ let Mainpage = () => {
             <div className={s.hero}>
                 <div><img src={photo} alt="me" className={s.photo} /></div>
                 <div className={s.hero_imformation}>
-                    <h1>Hello, My name is Alexandr</h1>
+                    <h1>Hello, my name is Alexandr</h1>
                     <h2>and I'm Junior Frontend developer</h2>
                 </div>
             </div>

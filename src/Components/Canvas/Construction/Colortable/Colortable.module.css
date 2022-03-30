@@ -1,5 +1,4 @@
-.cell
-{
+.cell {
     width: 60px;
     height: 60px;
     border: none;
@@ -7,8 +6,7 @@
     cursor: pointer;
 }
 
-.colorBlock
-{
+.colorBlock {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,20 +15,43 @@
     height: 120px;
 }
 
-.colorButtons
-{
+.colorButtons {
     display: flex;
     gap: 10px;
 }
-.text
-{
+
+.text {
     font-size: 28px;
     font-family: 'Roboto', sans-serif;
 }
-.container
-{
+
+.container {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
+@media (max-width: 440px) {
+    .cell {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 374px) {
+    .cell {
+        width: 40px;
+        height: 40px;
+    }
+    .text {
+        font-size: 22px;
+    }
+    .colorBlock {
+        min-width: 320px;
+        height: 90px;
+    }
+}

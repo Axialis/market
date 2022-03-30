@@ -17,8 +17,8 @@ let Svg = (props) => {
     return (
         <div className={s.cup}>
             <Logo dispatch={props.dispatch} />
-            <svg
-                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1045.7 1701.5" width={350}>
+            <svg 
+                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1045.7 1701.5" width="70%">
                 <path className={s.st0} style={{ fill: props.colorLid }}
                     d="M987.5,136.5c0,74.6-207.6,135.1-463.7,135.1S60.1,211.1,60.1,136.5S267.7,1.4,523.8,1.4 S987.5,61.8,987.5,136.5z" />
                 <path className={s.st0} style={{ fill: props.colorLid }}

@@ -1,5 +1,4 @@
-.nav
-{   
+.nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -8,16 +7,14 @@
     background-color: #323330;
 }
 
-.list
-{
+.list {
     display: flex;
     width: 450px;
     padding-right: 60px;
     justify-content: space-between;
 }
 
-.item
-{
+.item {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
@@ -25,7 +22,17 @@
     font-weight: 300;
 }
 
-.item:hover
-{
+.item:hover {
     color: #f0db4f;
+}
+
+
+@media (max-width: 600px) {
+    .list {
+        display: block;
+        position: relative;
+        padding-right: 60px;
+        z-index: 20;
+    }
+
 }
