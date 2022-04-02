@@ -8,3 +8,12 @@
     height: 500px;
     font-size: 28px;
 }
+
+.plot
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}

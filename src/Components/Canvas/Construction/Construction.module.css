@@ -86,11 +86,13 @@ button {
     height: 70px;
     width: 180px;
     font-size: 20px;
+    text-align: center;
 }
 
 .bunnonsBlock {
     display: flex;
     gap: 30px;
+    padding-bottom: 30px;
 }
 
 button:hover {

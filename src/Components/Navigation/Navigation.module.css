@@ -26,13 +26,21 @@
     color: #f0db4f;
 }
 
+.burger {
+    visibility: hidden;
+    padding-left: 30px;
+}
 
 @media (max-width: 600px) {
     .list {
-        display: block;
-        position: relative;
-        padding-right: 60px;
-        z-index: 20;
+        display: none;
     }
 
+    .burger {
+        visibility: visible;
+    }
+    .nav {
+        justify-content: flex-start;
+
+    }
 }

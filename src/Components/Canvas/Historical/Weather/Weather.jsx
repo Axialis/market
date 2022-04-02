@@ -3,12 +3,14 @@ import { useEffect, useState, useRef } from 'react';
 import * as d3 from "d3";
 import sun from '../../../../assets/pic/sun.svg'
 import error from '../../../../assets/pic/error.svg'
-
+console.log(s.svg)
 let generatePlot = (refPoint, data, sizeX, sizeY, nowTime) => {
 
     const margin = { top: 10, right: 40, bottom: 150, left: 100 },
         width = sizeX - margin.left - margin.right,
         height = sizeY - margin.top - margin.bottom;
+
+
 
     //create svg element   
     const svg = d3
@@ -16,6 +18,8 @@ let generatePlot = (refPoint, data, sizeX, sizeY, nowTime) => {
         .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
+        .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom])
+        .attr("style", "max-width: 100%; height: auto; height: intrinsic;")
         .append("g")
         .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
@@ -133,22 +137,6 @@ let generatePlot = (refPoint, data, sizeX, sizeY, nowTime) => {
                 return y(d.temperature)
             })
         )
-    const legend_keys = ["Tempetarure"]
-
-    const lineLegend = svg
-        .selectAll(".lineLegend").data(legend_keys)
-        .enter().append("g")
-        .attr("class", "lineLegend")
-        .attr("transform", `translate(${50}, ${height / 20})`);
-
-    lineLegend.append("text").text(function (d) {
-        return d;
-    })
-        .attr("transform", "translate(10,5)");
-
-    lineLegend.append("circle")
-        .attr("r", 5)
-        .attr("fill", "steelblue")
 }
 
 
@@ -238,7 +226,8 @@ let Weather = () => {
         )
     } else {
         return (
-            <div ref={myref}>
+            <div ref={myref} className={s.plot}>
+             <div>The weather history for the past 5 days</div>
             </div>
         )
     }
