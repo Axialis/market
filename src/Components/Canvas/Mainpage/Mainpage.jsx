@@ -27,6 +27,7 @@ let Mainpage = () => {
                 <li>React</li>
                 <li>D3</li>
                 <li>ReactToPrint</li>
+                <li>Google OAuth</li>
             </ul>
             </div>
             {/* <div>

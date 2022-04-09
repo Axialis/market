@@ -3,7 +3,6 @@ import { useEffect, useState, useRef } from 'react';
 import * as d3 from "d3";
 import sun from '../../../../assets/pic/sun.svg'
 import error from '../../../../assets/pic/error.svg'
-console.log(s.svg)
 let generatePlot = (refPoint, data, sizeX, sizeY, nowTime) => {
 
     const margin = { top: 10, right: 40, bottom: 150, left: 100 },

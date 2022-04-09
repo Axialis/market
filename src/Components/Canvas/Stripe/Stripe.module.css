@@ -1,0 +1,14 @@
+.result
+{
+    width: 80%;
+}
+.resultTitle
+{
+    font-size: 20px;
+    color: green;
+}
+
+.ResetButton
+{
+    align-items: center;
+}

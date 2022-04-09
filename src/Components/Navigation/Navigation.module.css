@@ -31,7 +31,18 @@
     padding-left: 30px;
 }
 
-@media (max-width: 600px) {
+.api
+{
+    position: absolute;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 850px) {
     .list {
         display: none;
     }
@@ -40,7 +51,10 @@
         visibility: visible;
     }
     .nav {
-        justify-content: flex-start;
-
+        justify-content: space-between;
+    }
+    .api
+    {
+        position: static;
     }
 }

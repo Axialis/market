@@ -1,0 +1,19 @@
+button
+{
+    height: 50px;
+}
+
+.google
+{
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    padding-right: 10px;
+    gap: 10px;
+}
+
+.text
+{
+    font-size: 18px;
+    padding-left: 10px;
+}

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import style from './Stripe.module.css'
 import {
     CardElement,
     useStripe,
@@ -64,7 +65,7 @@ const Field = ({
 
 const SubmitButton = ({processing, error, children, disabled}) => (
     <button
-        className={`SubmitButton ${error ? 'SubmitButton--error' : ''}`}
+        // className={`SubmitButton ${error ? 'SubmitButton--error' : ''}`}
         type="submit"
         disabled={processing || disabled}
     >
@@ -161,13 +162,10 @@ const Stripe = () => {
     };
 
     return paymentMethod ? (
-        <div className="Result">
-            <div className="ResultTitle" role="alert">
-                Payment successful
-            </div>
-            <div className="ResultMessage">
-                Thanks for trying Stripe Elements. No money was charged, but we
-                generated a PaymentMethod: {paymentMethod.id}
+        <div className={style.result}>
+            <div className={style.resultTitle} role="alert">
+                Payment successful!
+                Your cup is on its way!
             </div>
             <ResetButton onClick={reset} />
         </div>
