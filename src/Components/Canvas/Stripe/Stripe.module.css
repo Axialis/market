@@ -5,10 +5,34 @@
 .resultTitle
 {
     font-size: 20px;
-    color: green;
+    color: #424770;
 }
 
 .ResetButton
 {
     align-items: center;
+}
+
+.submitButton
+{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0 20px 0;
+    background: #fff1a8;
+    box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+    rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+}
+
+.cardField
+{
+    margin: 10px 0 10px 0;
+    max-width: 100%;
+    padding: 12px;
+    box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+      rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+    border-radius: 4px;
+    background: white;
+    color: #424770;
+    letter-spacing: 0.025em;
 }

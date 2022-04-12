@@ -30,8 +30,9 @@ const CARD_OPTIONS = {
     },
 };
 
+
 const CardField = ({onChange}) => (
-    <div className="FormRow">
+    <div>
         <CardElement options={CARD_OPTIONS} onChange={onChange} />
     </div>
 );
@@ -46,12 +47,11 @@ const Field = ({
                    value,
                    onChange,
                }) => (
-    <div className="FormRow">
-        <label htmlFor={id} className="FormRowLabel">
+    <div>
+        <label htmlFor={id}>
             {label}
         </label>
         <input
-            className="FormRowInput"
             id={id}
             type={type}
             placeholder={placeholder}
@@ -65,7 +65,7 @@ const Field = ({
 
 const SubmitButton = ({processing, error, children, disabled}) => (
     <button
-        // className={`SubmitButton ${error ? 'SubmitButton--error' : ''}`}
+    className={style.submitButton}
         type="submit"
         disabled={processing || disabled}
     >
@@ -74,7 +74,7 @@ const SubmitButton = ({processing, error, children, disabled}) => (
 );
 
 const ErrorMessage = ({children}) => (
-    <div className="ErrorMessage" role="alert">
+    <div role="alert">
         <svg width="16" height="16" viewBox="0 0 17 17">
             <path
                 fill="#FFF"
@@ -90,7 +90,7 @@ const ErrorMessage = ({children}) => (
 );
 
 const ResetButton = ({onClick}) => (
-    <button type="button" className="ResetButton" onClick={onClick}>
+    <button type="button" className={style.submitButton} onClick={onClick}>
         <svg width="32px" height="32px" viewBox="0 0 32 32">
             <path
                 fill="#FFF"
@@ -171,7 +171,7 @@ const Stripe = () => {
         </div>
     ) : (
         <form className="Form" onSubmit={handleSubmit}>
-            <fieldset className="FormGroup">
+            <fieldset>
                 <Field
                     label="Name"
                     id="name"
@@ -200,7 +200,7 @@ const Stripe = () => {
                     label="Phone"
                     id="phone"
                     type="tel"
-                    placeholder="375(29)123-45-67"
+                    placeholder="+375(29)123-45-67"
                     required
                     autoComplete="tel"
                     value={billingDetails.phone}
@@ -209,7 +209,7 @@ const Stripe = () => {
                     }}
                 />
             </fieldset>
-            <fieldset className="FormGroup">
+            <fieldset className={style.cardField}>
                 <CardField
                     onChange={(e) => {
                         setError(e.error);
