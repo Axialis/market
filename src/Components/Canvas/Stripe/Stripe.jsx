@@ -170,7 +170,7 @@ const Stripe = () => {
             <ResetButton onClick={reset} />
         </div>
     ) : (
-        <form className="Form" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <fieldset>
                 <Field
                     label="Name"

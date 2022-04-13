@@ -147,8 +147,7 @@ label {
 }
 
 form {
-    padding-left: 10px;
-    width: 300px;
+    width: 290px;
 }
 
 div {
@@ -251,22 +250,7 @@ div {
     }
     .fieldBlock {
         width: 320px;
-        height: 400px;
-    }
-    input {
-        width: 220px;
+        height: 450px;
     }
 }
 
-@media (max-width: 420px) {
-    .cup {
-        width: 300px;
-    }
-    .fieldBlock {
-        width: 280px;
-        height: 400px;
-    }
-    input {
-        width: 220px;
-    }
-}
